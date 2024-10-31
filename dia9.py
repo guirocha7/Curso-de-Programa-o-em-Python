@@ -90,11 +90,10 @@ Bem-Vindo ao Banco GRS
 
 por favor, faça o login para prosseguir com os próximos passos.
 ''')
-dado = input("Número da sua conta bancária:  ")
-dado1 = input("Digite a senha: ")
 for n in range(1,4):
     if conta == dado and senha == dado1:
-        break
+        dado = input("Número da sua conta bancária:  ")
+        dado1 = input("Digite a senha: ")
         print(f'''
         Seja Bem-Vindo
 
@@ -104,23 +103,12 @@ for n in range(1,4):
         3 - Saque
         4 - Sair
         ''')
+        break
     
     
     else:
         print("Tente novamente, algum dado está equivocado")
-        dado = input("Número da sua conta bancária:  ")
-        dado1 = input("Digite a senha: ")
-            # if conta == dado and senha == dado1:
-            # break
-            # print(f'''
-            # Seja Bem-Vindo
-
-            # Suas opções são:
-            # 1 - Verificar Extrato
-            # 2 - Fazer um Depósito
-            # 3 - Saque
-            # 4 - Sair
-            # ''')
+        
 
     
 
